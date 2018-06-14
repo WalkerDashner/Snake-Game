@@ -34,7 +34,12 @@ class ClassSnake
     }
     return false;
   }
-  void PrevPosUpdate(){
+  void Reset(){
+    Pos.x = 0;
+    Pos.y = 10;
     PrevPos = Pos.copy();
+    Vel.x = 1;
+    Vel.y = 0;
+    
   }
 }

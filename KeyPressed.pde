@@ -32,6 +32,16 @@ void keyPressed()
       }
     }
   }
+  if(key == ' ' && GameEnd == true){
+    loop();
+    for(int i = 0; i < boxes; i ++){
+      Snake[i].Reset();
+    }
+    boxes = 1;
+    score = -1;
+    Food.x = 10;
+    Food.y = 10;
+  }
   
   
   
